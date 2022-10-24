@@ -11,7 +11,7 @@ const { erc20ABI, factoryABI, pairABI, routerABI } = require("./AbiList");
 
 // Standard Provider
 const provider = new ethers.providers.JsonRpcProvider(
-    "https://bsc-dataseed.binance.org/"
+    "https://polygon-rpc.com/"
 );
 
 // Connect to Factory
@@ -54,5 +54,5 @@ const getPrices = async (amountInHuman) => {
 
 //console.log(contractRouter);
 
-const amountInHuman = "500";
+const amountInHuman = "5";
 getPrices(amountInHuman);
